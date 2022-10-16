@@ -7,7 +7,7 @@ function App() {
   const userState = useSelector((store: AppStore): User => store.user);
   return (
     <div className="App">
-      <p>{JSON.stringify(userState)}</p>
+      <pre>{JSON.stringify(userState)}</pre>
       <Home />
     </div>
   );
